@@ -18,7 +18,6 @@ while True:
 
     Option = float(input("\nEnter choice: "))
 
-
 # --------------------3. Check Balance (For Option 1)--------------------
     if Option == 1:
         print("\nYour current balance is :",initial_balance)
@@ -60,9 +59,9 @@ while True:
                 print("-",i)
                 
 
-                print()
+                
 
-        print("Total-Deposit : ",total_Deposit)
+        print("\nTotal-Deposit : ",total_Deposit)
         print("total-Withdraw :",total_Withdraw)
         
 # ---------------------------8. Exit (For Option 5)-----------------------------
