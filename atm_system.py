@@ -1,4 +1,4 @@
-# ------------------2. Initial Setup ------------
+ # ------------------2. Initial Setup ------------
 initial_balance = 1000
 transactions = [] 
 total_Deposit = 0
@@ -16,22 +16,20 @@ while True:
     print("4. Transaction History.")
     print("5. Exit\n")
 
-    Option = int(input("\nEnter choice: "))
+    Option = float(input("\nEnter choice: "))
 
 
 # --------------------3. Check Balance (For Option 1)--------------------
     if Option == 1:
-        print("\n===== ATM MENU =====")
         print("\nYour current balance is :",initial_balance)
         
 # ----------------------4. Deposit (For Option 2)-------------------------
     elif Option == 2:
-        print("\n===== ATM MENU =====")
         Amount = float(input("\nEnter your deposit amount :"))
         if Amount > 0:
             initial_balance = initial_balance + Amount
             total_Deposit = total_Deposit + Amount
-            transactions.append(f"Deposited: {Amount}",)
+            transactions.append(f"Deposited: {Amount}")
             print("Deposit successful!")
             print("New balance :", initial_balance)
         else:
@@ -39,7 +37,6 @@ while True:
 
 # -----------------------5. Withdraw (For Option 3)-------------------------
     elif Option == 3:
-        print("\n===== ATM MENU =====")
         Withdraw = float(input("Enter amount to withdraw: "))
         if Withdraw <= initial_balance and Withdraw > 0:
             initial_balance = initial_balance - Withdraw
@@ -55,7 +52,6 @@ while True:
 # -------------------------6. Transaction History (For Option 4)-------------
 
     elif Option == 4:
-        print("\n===== ATM MENU =====")
         print("\n--- Transaction History ---")
         if len(transactions) == 0:
             print("No transactions yet.")
@@ -72,7 +68,6 @@ while True:
 # ---------------------------8. Exit (For Option 5)-----------------------------
 
     elif Option == 5:
-        print("\n===== ATM MENU =====")
         print("Thank you for using ATM. Goodbye!")
         break
     else:
